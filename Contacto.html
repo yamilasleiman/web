@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estilo_contacto.css">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <title>Celestina - Página de Inicio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Calendario.html">Calendario</a></li>
+            <li><a href="Personalización.html">Gift Cards</a></li>
+            <li> <!--BARRA DE BUSQUEDA-->
+                <form action="#" method="post" >
+                    <datalist id="buscadorcursos">
+                        <option value="HTML"></option>
+                        <option value="JavaScript"></option>
+                        <option value="CSS"></option>
+                        <option value="Java"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                    <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
+                    <input type="submit" value="Buscar" class="lupa">
+                </form>
+            </li>
+            </li><div id="chango" >
+                <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+                <p id="numero-carrito">0</p>
+            </div>
+            </li> <!--CARRITO DE COMPRAS-->
+        </ul>
+    </nav>
+    <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
+    <main id="main">
+    <main>
+        <div class="e-cursos-carrito" id="modal-cursos-carrito">
+            <div class="contenido-modal">
+              <img src="Img/modal_1.jfif" class="modal_img" alt="">
+              <p id="titulo-modal">Cursos obtenidos:</p>
+              <ul id="listaCursos">
+              </ul>
+              <span class="cerrar">Cerrar</span>
+            </div>
+          </div>
+        <div id="modalExito" class="modal">
+            <div class="modal-content">
+                <img src="Img/modal_consulta.jpg" class="modal_img-contacto" alt="">
+                <h2 class="modal_tittle">¡Solicitud enviada!</h2>
+                 <p class="modal_paragraph">¡Gracias por contactarnos! En breve te llegara un mensaje/email con la respuesta a tu consulta</p>
+                 <a id="enlaceCerrar" class="btnCerrar" href="Index.html">Cerrar</a>
+            </div>
+        </div>
+    <div id="content"> 
+        <div id="mapa">
+            
+            <h3>Mapa de ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.364333972249!2d-58.5653801228567!3d-34.67075316104386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1682711667712!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+        <div id="section-contact">       
+            <header class="header">
+                <span><img id="logo-contacto" src="Img/Logo_contacto.png" alt=""><h2>Habla con nosotros</h2></span>
+            </header>
+            <form id="formulario" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+                
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" rows="5" maxlength="1000" oninput="contarCaracteres()"></textarea>
+                <p id="conteo-caracteres">0 caracteres ingresados/ 1000 restantes</p>
+                
+                <input id="boton" type="submit" value="Enviar">
+              </form>
+              
+              <div id="errores"></div>
+         </div>  
+        </div>
+</main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h4>INTEGRANTES</h4>
+                <p>Gómez Celeste - 45809908</p>
+                <p>Sleiman Yamila - 43316917</p>
+                <p>Viola Melina - 44163024</p>
+            </div>
+         
+            <div id="box">
+                <h4>MENU</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Contacto.html">Contactanos</a></li>
+                        <li><a href="Calendario.html">Calendario</a></li>
+                        <li><a href="Personalización.html">Gift Cards</a></li>
+                    </ul>
+            </div>
+        
+            <div id="red-social">
+                <h4>SIGUENOS</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA" target="_blank">
+                        <img src="Img/Facebook-logo.png" alt="facebook" ><p>Facebook</p> 
+                    </a></li>
+                    <li><a href="https://www.instagram.com/unlamoficial/?hl=es" target="_blank">
+                        <img src="Img/Instagram-logo.png" alt="Instagram"><p>Instagram</p>
+                    </a></li>
+                    <li><a href="https://www.unlam.edu.ar/" target="_blank">
+                        <img src="Img/Unlam-logo.png" alt="UnlamOficial"><p>UNLaM Oficial</p>
+                    </a></li>  
+                </ul> 
+            </div>
+        </div>
+        
+       <div class="grupo-2">
+           <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
+            <script src="JavaScript/contacto.js"></script>
+            <script src="JavaScript/indexJS.js"></script>
+            <script src="JavaScript/cargarCarrito.js"></script>
+            <script src="JavaScript/carrito.js"></script>
+            <script src="JavaScript/modal.js"></script>
+        </div>
+    </footer>
+</body>
+</html>

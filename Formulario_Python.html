@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estilo_inscripcion.css">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Inscripción</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Calendario.html">Calendario</a></li>
+            <li><a href="Personalización.html">Gift Cards</a></li>
+            <li> <!--BARRA DE BUSQUEDA-->
+                <form action="#" method="post" >
+                    <datalist id="buscadorcursos">
+                        <option value="HTML"></option>
+                        <option value="JavaScript"></option>
+                        <option value="CSS"></option>
+                        <option value="Java"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                    <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
+                    <input type="submit" value="Buscar" class="lupa">
+                </form>
+            </li>
+            </li><div id="chango" >
+                <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+                <p id="numero-carrito">0</p>
+            </div>
+            </li> <!--CARRITO DE COMPRAS-->
+        </ul>
+    </nav>
+    
+    <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
+    <main id="main">
+        <div class="conteiner-main">
+            <div class="e-cursos-carrito" id="modal-cursos-carrito">
+                <div class="contenido-modal">
+                  <img src="Img/modal_1.jfif" class="modal_img" alt="">
+                  <p id="titulo-modal">Cursos obtenidos:</p>
+                  <ul id="listaCursos">
+                  </ul>
+                  <span class="cerrar">Cerrar</span>
+                </div>
+              </div>
+            <section class="form_wrap" id="form_1">
+                <div class="img_curso">
+                    <img src="Img/curso6.jpg" alt="">
+                    <p class="monto">$11659</p>
+                    <button id="inscripcion" class="boton-inscribirse" openModal();>Inscribirse</button>
+                </div>
+                <section class="modal">
+                    <div class="modal_container">
+                        <img src="Img/felicitaciones.png" class="modal_img" alt="">
+                            <h2 class="modal_tittle">¡Ya estas inscripto!</h2>
+                            <p class="modal_paragraph">¡Gracias por inscribirte a Celestina Code! En breve te llegara un email con más detalles sobre la cursada</p>
+                            <a href="index.html" class="cerrarModal">CERRAR</a>
+                    </div>
+                    </section>
+    
+                <div class="accordion">
+                    <div class="contentBx">
+                    </div>
+                    </div>
+                <div id="form-conteiner">
+                    <div class="form">
+                        <form class="formformulario" id="principal">
+                            <label for="names">Nombre</label>
+                            <input type="text" id="nombres" class="inputformulario" required>
+                            <label for="names">Apellido</label>
+                            <input type="text" id="apellido" class="inputformulario" required>
+                            <label for="phone">Telefono / Celular</label>
+                            <input type="text" id="tel" class="inputformulario" required>
+                            <label for="email">Correo electronico *</label>
+                                <input type="text" id="email" class="inputformulario" required>
+                                <label for="names">DNI</label>
+                                <input type="text" id="dni" class="inputformulario" required>
+                            </form>
+                        </div>
+                        <div id="dato-extra">
+                            <button class="buttonformulario" id="agregar" onclick="mostrar1();">Agregar Persona</button>
+                            <div id="volver">
+                                <a href="index.html">Volver</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="form_wrap" id="form_2" style="display:none;">
+                    <div id="form-conteiner">
+                        <div class="form">
+                            <form class="formformulario" id="secundario">
+                                <label for="names">Nombre</label>
+                                <input type="text" id="nombres" class="inputformulario" required>
+                                <label for="names">Apellido</label>
+                                <input type="text" id="apellido" class="inputformulario" required>
+                                <label for="phone">Telefono / Celular</label>
+                                <input type="text" id="tel" class="inputformulario" required>
+                            <label for="email">Correo electronico *</label>
+                            <input type="text" id="email" class="inputformulario" required>
+                            <label for="names">DNI</label>
+                            <input type="text" id="dni" class="inputformulario" required>
+                        </form>
+                        <div id="dato-extra">
+                            <button class="buttonformulario" id="agregar" onclick="mostrar2();">Agregar Persona</button>
+                            <button type="button" id="cancelar" onclick="ocultar1();"> Cancelar </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="form_wrap" id="form_3" style="display:none;">
+                <div id="form-conteiner">
+                    <div class="form">
+                        <form class="formformulario" id="terciario" >
+                            <label for="names">Nombre</label>
+                            <input type="text" id="nombres" class="inputformulario" required>
+                            <label for="names">Apellido</label>
+                            <input type="text" id="apellido" class="inputformulario" required>
+                            <label for="phone">Telefono / Celular</label>
+                            <input type="text" id="tel" class="inputformulario" required>
+                            <label for="email">Correo electronico *</label>
+                            <input type="text" id="email" class="inputformulario" required>
+                            <label for="names">DNI</label>
+                            <input type="text" id="dni" class="inputformulario" required>
+                        </form>
+                        <div id="dato-extra">
+                            <button class="buttonformulario" id="agregar">Máximo 3 registros</button> 
+                            <button type="button" id="cancelar" onclick="ocultar2();"> Cancelar </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+    
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <h4>INTEGRANTES</h4>
+                    <p>Gómez Celeste - 45809908</p>
+                    <p>Sleiman Yamila - 43316917</p>
+                    <p>Viola Melina - 44163024</p>
+            </div>
+         
+            <div class="box">
+                <h4>MENU</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Contacto.html">Contactanos</a></li>
+                        <li><a href="Calendario.html">Calendario</a></li>
+                        <li><a href="Personalización.html">Gift Cards</a></li>
+                    </ul>
+            </div>
+        
+            <div id="red-social">
+                <h4>SIGUENOS</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                        <img src="Img/Facebook-logo.png" alt="facebook"><p>Facebook</p> 
+                    </a></li>
+                    <li><a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                        <img src="Img/Instagram-logo.png" alt="Instagram"><p>Instagram</p>
+                    </a></li>
+                    <li><a href="https://www.unlam.edu.ar/" target="_blank">
+                        <img src="Img/Unlam-logo.png" alt="UnlamOficial" ><p>UNLaM Oficial</p>
+                    </a></li>  
+                </ul> 
+            </div>
+        </div>
+        
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
+        </div>
+        
+    </footer>
+    <script src="JavaScript/Formularios.js"></script>
+    <script src="JavaScript/indexJS.js"></script>
+    <script src="JavaScript/cargarCarrito.js"></script>
+    <script src="JavaScript/carrito.js"></script>
+    <script src="JavaScript/modal.js"></script>
+</body>
+</html> 

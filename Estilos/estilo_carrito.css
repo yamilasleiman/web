@@ -1,0 +1,124 @@
+main{
+    height: 120vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+#main{
+    min-height: 120vh;
+    position: relative;
+    z-index: 1;
+}
+#fondo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+/* Estilos CSS existentes */
+    /* Estilos CSS para el carrito de compras */
+    #carrito {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+      }
+      img{
+        width: 200px;
+      }
+      /*ESTILO CURSOS*/
+.Cursos_destacados{
+    justify-content: center;
+    margin-top: 45px;
+}
+
+h2{
+    width: 70em;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-top: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    background-color: #3E0169;
+    box-shadow: 0 15px 15px #000000;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+}
+.card-list-cursos{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translate(0% , 0%);
+    gap: 50px;
+    padding: 20px; 
+}
+.card-img{
+    background: transparent;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.card-img img{
+    width: 100px;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    width: 280px
+}
+.text-curso h3{
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+      #contador {
+        background-color: #3E0169;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      /* Estilos CSS para el popup de cursos obtenidos */
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      #cursos-obtenidos {
+        margin-bottom: 10px;
+      }
+  
+      #mensaje-vacio {
+        text-align: center;
+        font-style: italic;
+        color: gray;
+        display: none;
+      }
+      /*ESTILO IMAGENES CURSOS AGREGADOS*/
+#card-list-cursos2{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translate(0% , 0%);
+    gap: 10px;
+    margin-top: 20px;
+   
+}

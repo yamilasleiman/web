@@ -1,0 +1,695 @@
+#main{
+    min-height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+#fondo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+/*-----------------------------*/
+}.seccion-1{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 60px;
+}
+.container-info{
+    flex: 1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.container-img{
+    padding-top: 25px;
+}
+.container-img img{
+    width: 550px; 
+    padding-left: 100px;   
+}
+
+.container-title span{
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 0;
+}
+.form-grupo p{
+    font-size: 13px;
+    color: white;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.precio{
+    display: flex;
+}
+.precio img{
+    width: 40px;
+height: 40px;
+margin-top: 15px;
+}
+.precio p{
+    font-size: 22px;
+    color: white;
+    line-height: 22px;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    
+}
+.form-grupo ul li{
+     font-size: 13px;
+    color: white;
+    line-height: 22px;
+    margin-left: 30px;
+    list-style-type: square;
+}
+.form-grupo h4{
+    color: #78336F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.container-contenidos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.container-contenidos span{
+    font-size: 24px;
+    font-weight: 300;
+}
+.container-contenidos p{
+    font-size: 13px;
+    color: #252525;
+    line-height: 22px;
+    margin-top: 10px;
+}
+.form-grupo ul{
+    margin-bottom: 25px;
+}
+
+#titulo_neon{
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-family:'Press Start 2P', cursive;
+    color: white;
+    height: 100px;
+    width: 200px;
+    position: relative;
+    text-shadow: 0 0 15px #ad5389, 0 0 40px #ad5389,0 0 80px #3c1053,0 0 160px #3c1053;
+    
+}
+.boton-inscribirse{
+    padding: 12px 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    transition: 0.2s;
+    background: black;
+    box-shadow: 0 0 15px #3c1053, 0 0 40px #3c1053;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+
+}
+.boton-inscribirse:hover{
+    background: #3c1053;
+    box-shadow: 0 0 10px #3c1053, 0 0 40px #3c1053, 0 0 80px #3c1053 ;
+   
+}
+/* VENTANA MODAL*/
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #121212bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .4s;
+    --transform: traslateY(-100vh);
+    --transition: transform .8s;
+    z-index: 3;
+}
+.modal--show{
+opacity: 1;
+pointer-events: unset;
+transition: opacity .6s;
+--transform: traslateY(0);
+--transition: transform .8s .8s;
+
+}
+.modal_container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 100%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+    
+}
+.modal_tittle{
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+.modal_paragraph{
+margin-bottom: 10px;
+color: #3a3a3a;
+}
+.modal_paragraph span{
+    color: black;
+}
+.modal_img{
+    width: 30%;
+    max-width: 300px;
+}
+.modal_cerrar{
+    text-decoration: none;
+    color: white;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
+    background: linear-gradient(to right, #3c1053, #ad5389); 
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1em 3em;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+.modal_cerrar:hover{
+    background-color: white;
+    border: 1px solid #3c1053;
+
+}
+
+.continuarInscripcion{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
+    background: linear-gradient(to right, #3c1053, #ad5389); 
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1em 3em;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+.continuarInscripcion:hover{
+    background-color: white;
+    border: 1px solid #3c1053;
+
+}
+
+@media screen and (   max-width: 800px){
+    .modal_container{
+        width: 90%;
+    }
+}
+/* PROBANDO CAJA DE CONTENIDO*/
+.accordion{
+    margin-top: 20px;
+   justify-content: center; 
+   align-items: center;
+   min-height: 30vh;
+   max-width: 800px;
+}
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+    
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    background-color: #78336F;
+    color: white;
+    cursor: pointer;
+}
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion .contentBx .contenido{
+    position: relative;
+    background: black;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordion .contentBx.active .label::before{
+content: '-';
+}
+.accordion .contentBx.active .contenido{
+    height: 120px;
+    padding: 10px;
+}
+#cotenido1{
+    display: flex;
+    text-align: center;
+}
+
+
+/* FIN DE CAJA DE CONTENIDO*/
+
+
+/*CLASES*/
+.caja-contenidos2, .caja-contenidos3, #cotenido1{
+margin-bottom: 10px;
+}
+.conteiner-clasuno,
+.conteiner-clasedos{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid white;
+   
+}
+.titulo-introduccion,
+.titulo-claseuno,
+.titulo-clasedos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.duration-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    font-size: 13px;
+    color: white;
+   
+}
+
+.name-content{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: white;
+    line-height: 22px;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+
+.caja-contenidos2{
+        display: flex;
+        border-top: 1px solid white;
+        align-items: center;
+        background-color: black;
+        padding-top: 10px;
+ }
+.caja-contenidos3{
+        display: flex;
+        align-items: center;
+        border-top: 1px solid white;
+        background-color:black;
+       padding-top: 10px;
+     }
+
+ .seccion-1-p2{
+         padding-right: 280px;
+     }
+.material-symbols-outlined{
+    color: white;
+}
+
+/*CONTENIDO DOCENTE*/
+.container-docente{
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container-docente h4{
+    font-size: 24px;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 2px;
+text-align: center;
+color:white;
+font-family:'Press Start 2P', cursive;
+text-transform: uppercase;
+}
+
+.contiene-docentes{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+height: 100%;
+}
+
+.docente-caja{
+    width: 620px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    background: #ad5389;  
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
+background: linear-gradient(to right, #3c1053, #ad5389); 
+
+    padding: 20px;
+    margin: 25px;
+   
+    
+}
+.perfil-img{
+width:50px;
+height: 50px;
+border-radius: 50px;
+overflow: hidden;
+margin-right: 30px;
+}
+.perfil-img img{
+width: 100%;
+height: 100%;
+object-fit: fill;
+}
+.perfil{
+   display: flex;
+   align-items: center; 
+}
+.nombre-user{
+    display: flex;
+    flex-direction: column;
+}
+.nombre-user strong{
+    color: black;
+    font-size: 1.3rem ;
+}
+
+.nombre-user span{
+    color: #242424;
+    font-size :1.1rem;
+}
+
+.estrellas .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  ;
+  color: #F7BF03;
+}
+.caja-top{
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   justify-content: space-between;
+}
+.comentario{
+    color: white;
+}
+.comentario strong{
+    font-style: italic;
+    font-weight: 800;
+}
+.comentario ul li{
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/*CURSOS RELACIONADOS*/
+.cursos-relacionados{
+    text-align: center;
+    margin-top: 45px;
+}
+.contiene-cursos-rela h2{
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    color:white;
+    font-family:'Press Start 2P', cursive;
+    text-transform: uppercase;
+}
+.card-list-cursos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    
+}
+
+.card-img{
+background: transparent;
+margin-bottom: 15px;
+}
+.card-img img{
+height: 400px;
+object-fit: cover;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+width: 280px;
+    border-style: outset;
+    border-color: white;
+    border-width: 5px;
+}
+.text-curso{
+   color: white;
+    justify-content: space-between;
+}
+
+.ver_curso{
+    border: none;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
+background: linear-gradient(to right, #3c1053, #ad5389); 
+    color: white;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    display: block;
+  padding: 0.7rem 1rem;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.ver_curso:hover{
+        background: rgb(6,4,17);
+        background: linear-gradient(90deg, rgba(6,4,17,1) 7%, rgba(150,139,221,1) 76%);
+}
+
+
+    /*PANTALLA CELULAR*/
+    @media screen and (max-width: 600px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            right: 0;
+        }
+        nav{
+            max-width: 100%;
+            right: 0;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        body nav ul li a {
+            font-size: 30px;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        .seccion-1{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .seccion-1 #img{
+            width: 10px;
+            padding: 0;
+        }
+        .container-img img{
+            width: 80%;  
+            padding: 0;
+        }
+        .seccion-1 p{
+            text-align: justify;
+        }
+        .card-list-cursos{
+            display: flex;
+            margin-left: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr); */
+        }
+        .card-list-cursos img{
+            height: 200px;
+            width: 140px;
+        }
+        h3{
+            display: flex;
+            text-align: center;
+        }
+        footer{
+            justify-content: center;
+            right: 0;
+        }
+        .grupo-1{
+            display: flex;
+            flex-direction: column;
+        }
+      }
+  
+    /*PANTALLA TABLET*/
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+        body{
+            min-width: 601px;
+            max-width: 1024px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            right: 0;
+        }
+        nav{
+            max-width: 100%;
+            right: 0;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        body nav ul li a {
+            font-size: 30px;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        .seccion-1{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 10%;
+        }
+        .seccion-1 #img{
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+        }
+        .seccion-1 p{
+            text-align: justify;
+        }
+        .card-list-cursos{
+            display: flex;
+            margin-left: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr); */
+        }
+        .card-list-cursos img{
+            text-align: center;
+            justify-content: center;
+            height: 200px;
+            width: 140px;
+        }
+        h3{
+            display: flex;
+            text-align: center;
+        }
+        footer{
+            right: 0;
+            justify-content: center;
+            right: 0;
+        }
+        .grupo-1{
+            display: flex;
+            flex-direction: row;
+    
+        }  
+      }
+
+  /*PANTALLA PC*/
+    @media screen and (min-width: 1025px) {
+        header {
+            max-width: 100%;
+            right: 0;
+        }
+        nav{
+            max-width: 100%;
+            right: 0;
+        }
+        nav ul {
+            align-items: center;
+            max-width: 100%;
+            right: 0;
+        }
+        body nav ul li a {
+            font-size: 30px;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        
+        .seccion-1 p{
+            text-align: justify;
+        }
+        .card-list-cursos{
+            display: flex;
+            margin-left: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            /* display: grid;
+            grid-template-columns: repeat(2,1fr); */
+        }
+        .card-list-cursos img{
+            height: 300px;
+            width: 210px;
+        }
+        h3{
+            display: flex;
+            text-align: center;
+        }
+        footer{
+            right: 0;
+            justify-content: center;
+            right: 0;
+      }
+    }

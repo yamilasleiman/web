@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estilo_personalizacion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
+    <title>Personalización de Gift Card</title>
+</head>
+<body>
+    <nav id="#navegador">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Calendario.html">Calendario</a></li>
+            <li><a href="Personalización.html">Gift Cards</a></li>
+            <li> <!--BARRA DE BUSQUEDA-->
+                <form action="#" method="post" >
+                    <datalist id="buscadorcursos">
+                        <option value="HTML"></option>
+                        <option value="JavaScript"></option>
+                        <option value="CSS"></option>
+                        <option value="Java"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                    <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
+                    <input type="submit" value="Buscar" class="lupa">
+                </form>
+            </li>
+            </li><div id="chango" >
+              <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+              <p id="numero-carrito">0</p>
+            </div>
+            </li> <!--CARRITO DE COMPRAS-->
+        </ul>
+    </nav>
+    <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
+    <main id="main">
+          <div class="container">
+            <div class="e-cursos-carrito" id="modal-cursos-carrito">
+              <div class="contenido-modal">
+                <img src="Img/modal_1.jfif" class="modal_img" alt="">
+                <p id="titulo-modal">Cursos obtenidos:</p>
+                <ul id="listaCursos">
+                </ul>
+                <span class="cerrar">Cerrar</span>
+              </div>
+            </div>
+              <div id="visualizacion">
+              <div id="preview-card" class="preview" >
+              <div class="preview-column">
+                <div class="preview">
+                      <div class="container-logo-titulo">
+                        <div class="logo-column"><img src="Img/CELESTINA.png" alt="Logo de la empresa"></div>
+                        <div class="title-column"><h2> GIFT CARD</h2></div>
+                      </div>
+                    <div id="preview-title" class="title">Título del evento</div>
+                    <div id="preview-recipient" class="recipient"></div>
+                    <div id="preview-datetime" class="date-time"></div>
+                    <div id="preview-amount" class="amount">Monto: </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          <div id="ajustes">
+                <div class="controls-column">
+                  <h3>Personalización de Gift Card</h3>
+                  <p>¡Regala la libertad de elegir con nuestra Gift Card!La oportunidad perfecta para sorprender a tus seres queridos con cursos, experiencias y conocimiento. 
+                <p>¡Un regalo que abre puertas y despierta pasiones! Descubre nuestra variedad de opciones y sorprende con el regalo perfecto en cualquier ocasión. ¡Una Gift Card, infinitas posibilidades!</p>
+
+                  <div class="form-group">
+                    <label for="event">Nombre del evento:</label>
+                    <input type="text" id="event" placeholder="Feliz cumpleaños">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient" id="Destinatario">Destinatario:</label>
+                    <input type="text" class="form-control input-field" id="recipient" placeholder="Harry Potter">
+                  </div>
+                <div class="form-group">
+                    <label for="text-color" >Color del texto:</label>
+                    <select id="text-color" >
+                      <option value="#000000" selected>Negro</option>
+                      <option value="#fe9dff">Rosa</option>
+                      <option value="#750fd5">Morado</option>
+                      <option value="#c943f4">Violeta</option>
+                      <option value="#ea28f2">Magenta</option>
+                      <option value="#c7c7c7">Gris</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="font-size">Tamaño de fuente:</label>
+                    <select id="font-size">
+                      <option value="15px">Pequeño</option>
+                      <option value="20px">Mediano</option>
+                      <option value="25px">Grande</option>
+                      <option value="30px">Premium</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="amount">Monto:</label>
+                    <input type="text" class="form-control input-field" id="amount" placeholder="$10000">
+                  </div>
+                  <div class="form-group">
+                    <label for="location">Ubicación del monto:</label>
+                    <select id="location">
+                      <option value="center">Centro</option>
+                      <option value="left">Izquierda</option>
+                      <option value="right">Derecha</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="background-color">Color de fondo:</label>
+                    <div id="color-options">
+                      <div class="color-option" style="background-color: #ccc;"></div>
+                      <div class="color-option" style="background-color: #f78eee;"></div>
+                      <div class="color-option" style="background-color: #ad5389;"></div>
+                      <div class="color-option" style="background-color: #78336F;"></div>
+                      <div class="color-option" style="background-color: #3c1053;"></div>
+                    </div>
+                    <input type="color" id="background-color-picker" style="display: none;">
+                  </div>
+            </div>
+          </div>  
+        </div>       
+    </main>
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h4>INTEGRANTES</h4>
+                <p>Gómez Celeste - 45809908</p>
+                <p>Sleiman Yamila - 43316917</p>
+                <p>Viola Melina - 44163024</p>
+            </div>
+         
+            <div class="box">
+                <h4>MENU</h4>
+                    <ul id="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Contacto.html">Contactanos</a></li>
+                        <li><a href="Calendario.html">Calendario</a></li>
+                        <li><a href="Personalización.html">Gift Cards</a></li>
+                    </ul>
+            </div>
+        
+            <div id="red-social">
+              <h4>SIGUENOS</h4>
+              <ul>
+                  <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA" target="_blank">
+                      <img src="Img/Facebook-logo.png" alt="facebook" ><p>Facebook</p> 
+                  </a></li>
+                  <li><a href="https://www.instagram.com/unlamoficial/?hl=es" target="_blank">
+                      <img src="Img/Instagram-logo.png" alt="Instagram"><p>Instagram</p>
+                  </a></li>
+                  <li><a href="https://www.unlam.edu.ar/" target="_blank">
+                      <img src="Img/Unlam-logo.png" alt="UnlamOficial"><p>UNLaM Oficial</p>
+                  </a></li>  
+              </ul> 
+          </div>
+      </div>
+        
+       <div class="grupo-2">
+           <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
+        </div>
+       
+    </footer>
+    
+    <script src="JavaScript/personalizacion.js"></script>
+    <script src="JavaScript/indexJS.js"></script>
+    <script src="JavaScript/cargarCarrito.js"></script>
+    <script src="JavaScript/carrito.js"></script>
+    <script src="JavaScript/modal.js"></script>
+</body>
+</html>

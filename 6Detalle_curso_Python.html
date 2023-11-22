@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estilo_detalleCurso.css">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Detalle del curso</title>
+</head>
+<body>
+    <nav id="#navegador">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Calendario.html">Calendario</a></li>
+            <li><a href="Personalización.html">Gift Cards</a></li>
+            <li> <!--BARRA DE BUSQUEDA-->
+                <form action="#" method="post" >
+                    <datalist id="buscadorcursos">
+                        <option value="HTML"></option>
+                        <option value="JavaScript"></option>
+                        <option value="CSS"></option>
+                        <option value="Java"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                    <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
+                    <input type="submit" value="Buscar" class="lupa">
+                </form>
+            </li>
+            </li><div id="chango" >
+                <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+                <p id="numero-carrito">0</p>
+            </div>
+            </li> <!--CARRITO DE COMPRAS-->
+        </ul>
+    </nav>
+    <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
+    <main>
+        <div id="main-content">
+            <div class="e-cursos-carrito" id="modal-cursos-carrito">
+                <div class="contenido-modal">
+                  <img src="Img/modal_1.jfif" class="modal_img" alt="">
+                  <p id="titulo-modal">Cursos obtenidos:</p>
+                  <ul id="listaCursos">
+                  </ul>
+                  <span class="cerrar">Cerrar</span>
+                </div>
+              </div>
+        <section class="seccion-1">
+            <div class="container-img">
+                <img src="Img/curso6.jpg">
+            </div>
+            <div class="container-info">
+                  <div class="container-title">
+                    <span id="titulo_neon">CURSO DE PYTHON</span>
+                  </div>
+                <div class="container-detalles-curso">
+                    <div class="form-grupo">
+                        <div class="precio">
+                            <img src="Img/logo_argentia.png" alt="Arg">
+                            <p>$11.659</p>
+                        </div>
+                        <h4>Tiempo de dedicacion necesario: 2 semanas</h4>
+                        <h4>Descripcion del curso:</h4>
+                        <p>En este curso aprenderás las bases de programación uno de los lenguajes más populares en estos tiempos. Partirás desde sus fundamentos, para luego abarcar módulos y sintaxis, hasta el uso de reglas para crear tus primeras aplicaciones</p>
+                        <h4>Requisitos previos:</h4>
+                        <p>Para este curso es ideal tener conocimientos de pensamiento computacional. Para mejorar tu experiencia de cursada, te aconsejamos contar con:</p>
+                            <ul>
+                            <li>PC con 8 GB de memoria RAM, procesador de dos núcleos y GPU de 2 GB de RAM</li>
+                            <li>Sistema operativo: Windows 7 o superior. </li>
+                            </ul>
+                            
+                    </div>
+                    <button id="comprar" data-value="Python - curso inicial" class="boton-inscribirse" openModal();>INSCRIBIRSE</button>
+                
+                    <section class="modal">
+                        <div class="modal_container">
+                            <img src="Img/felicitaciones.png" class="modal_img" alt="">
+                        <h2 class="modal_tittle">¡Ya casi terminas!</h2>
+                        <p class="modal_paragraph"> <span>Duracion del curso:</span> 2 semanas</p>
+                        <p class="modal_paragraph"><span>Fecha de inicio:</span> 10 de agosto</p>
+                        <p class="modal_paragraph"><span>Fecha de finalización:</span> 24 de agosto</p>
+                        <p class="modal_paragraph"><span>Valor del curso:</span> $11.659ars</p>
+                        <p class="modal_paragraph">¡Estas a un paso de finalizar la compra! Tocá el boton de completar inscripción, llená el formulario y disfrutá de tu curso.</p>
+                        <a href="" class="modal_cerrar">CERRAR</a>
+                        <a href="Formulario_Python.html" class="continuarInscripcion">COMPLETAR INSCRIPCIÓN</a>
+                    </div>
+                    </section>
+            <div class="accordion">
+                <div class="contentBx">
+                    <div class="label">INTRODUCCION</div>
+                    <div class="contenido">
+                        <div id="cotenido1">
+                        <div class="perfil-content">
+                            <!----icono contenido-->
+                                    <span class="material-symbols-outlined">
+                                        arrow_drop_down_circle
+                                        </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong>INTRO- Video</strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>90min</p>
+                            </div>
+                    </div>
+                    <div class="caja-contenidos2">
+                        <div class="perfil-content">
+                        <!----icono contenido-->
+                        <span class="material-symbols-outlined">
+                            description
+                            </span>
+                        </div>
+                        <!----nombre contenidos-->
+                        <div class="name-content">
+                            <strong>Inicio Python</strong>
+                        </div>
+                        <!---duracion contenido-->
+                        <div class="duration-content">
+                            <p>Lectura obligatoria</p>
+                        </div>
+                    </div>
+                          <!----CONTENIDO INTRODUCCION P3-->
+                          <div class="caja-contenidos3">
+                            <div class="perfil-content">
+                            <!----icono contenido-->
+                            <span class="material-symbols-outlined">
+                                assignment_turned_in
+                                </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong> Examen final</strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>60mn</p>
+                            </div>
+                        </div>
+        
+                </div>
+                </div>
+
+                <div class="contentBx">
+                    <div class="label">CLASE 1</div>
+                    <div class="contenido">
+                        <div id="cotenido1">
+                        <div class="perfil-content">
+                            <!----icono contenido-->
+                                    <span class="material-symbols-outlined">
+                                        arrow_drop_down_circle
+                                        </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong>INTRO- Datos </strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>90min</p>
+                            </div>
+                    </div>
+                    <div class="caja-contenidos2">
+                        <div class="perfil-content">
+                        <!----icono contenido-->
+                        <span class="material-symbols-outlined">
+                            description
+                            </span>
+                        </div>
+                        <!----nombre contenidos-->
+                        <div class="name-content">
+                            <strong>Estructuras </strong>
+                        </div>
+                        <!---duracion contenido-->
+                        <div class="duration-content">
+                            <p>Lectura obligatoria</p>
+                        </div>
+                    </div>
+                          <!----CONTENIDO INTRODUCCION P3-->
+                          <div class="caja-contenidos3">
+                            <div class="perfil-content">
+                            <!----icono contenido-->
+                            <span class="material-symbols-outlined">
+                                assignment_turned_in
+                                </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong> Examen final</strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>60mn</p>
+                            </div>
+                        </div>
+        
+                </div>
+                </div>
+
+                <div class="contentBx">
+                    <div class="label">CLASE 2</div>
+                    <div class="contenido">
+                        <div id="cotenido1">
+                        <div class="perfil-content">
+                            <!----icono contenido-->
+                                    <span class="material-symbols-outlined">
+                                        arrow_drop_down_circle
+                                        </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong>TUTORIAL - Aplicaciones</strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>90min</p>
+                            </div>
+                    </div>
+                    <div class="caja-contenidos2">
+                        <div class="perfil-content">
+                        <!----icono contenido-->
+                        <span class="material-symbols-outlined">
+                            description
+                            </span>
+                        </div>
+                        <!----nombre contenidos-->
+                        <div class="name-content">
+                            <strong>Librerias y Frameworks</strong>
+                        </div>
+                        <!---duracion contenido-->
+                        <div class="duration-content">
+                            <p>Lectura obligatoria</p>
+                        </div>
+                    </div>
+                          <!----CONTENIDO INTRODUCCION P3-->
+                          <div class="caja-contenidos3">
+                            <div class="perfil-content">
+                            <!----icono contenido-->
+                            <span class="material-symbols-outlined">
+                                assignment_turned_in
+                                </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong> Examen diagnostica final </strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>60mn</p>
+                            </div>
+                        </div>
+        
+                </div>
+                </div>
+
+                <div class="contentBx">
+                    <div class="label">CLASE 3</div>
+                    <div class="contenido">
+                        <div id="cotenido1">
+                        <div class="perfil-content">
+                            <!----icono contenido-->
+                                    <span class="material-symbols-outlined">
+                                        arrow_drop_down_circle
+                                        </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong>FINAL- Video</strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>90min</p>
+                            </div>
+                    </div>
+                    <div class="caja-contenidos2">
+                        <div class="perfil-content">
+                        <!----icono contenido-->
+                        <span class="material-symbols-outlined">
+                            description
+                            </span>
+                        </div>
+                        <!----nombre contenidos-->
+                        <div class="name-content">
+                            <strong>Unidades </strong>
+                        </div>
+                        <!---duracion contenido-->
+                        <div class="duration-content">
+                            <p>Lectura obligatoria</p>
+                        </div>
+                    </div>
+                          <!----CONTENIDO INTRODUCCION P3-->
+                          <div class="caja-contenidos3">
+                            <div class="perfil-content">
+                            <!----icono contenido-->
+                            <span class="material-symbols-outlined">
+                                assignment_turned_in
+                                </span>
+                            </div>
+                            <!----nombre contenidos-->
+                            <div class="name-content">
+                                <strong> Examen final</strong>
+                            </div>
+                            <!---duracion contenido-->
+                            <div class="duration-content">
+                                <p>60mn</p>
+                            </div>
+                        </div>
+        
+                </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!---SECCION PROFESORES-->
+        <section>
+            <div class="docente">
+                <div class="container-docente">
+                    <h4>Conoce quién enseña el Curso de Python</h4>
+                 </div>
+                 <div class="contiene-docentes">
+                    <!---CAJA 1-->
+                    <div class="docente-caja">
+                        <div class="caja-top">
+                            <div class="perfil">
+                                <div class="perfil-img">
+                                    <img src="Img/docente1.jpg" alt="docente">
+                                </div>
+                                <!----nombre y usuario-->
+                                <div class="nombre-user">
+                                    <strong>Melina Viola</strong>
+                                    <span>@meeelll</span>
+                                </div>
+                            </div>
+                                
+                        <!----RESEÑAS-->
+                        <div class="reseñas">
+                            <div class="estrellas">
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                            </div>
+                        </div>
+                        </div>
+                        <!----COMENTARIOS-->
+                        <div class="comentario">
+                            <p>Ingeniera en Sistemas Computacionales Titulado. Amplia experiencia dando clases. Explicaba de una manera sencilla de comprender, todo en un lenguaje claro y sencillo y utilizando ejemplos fáciles de digerir y recordar, utilizando técnicas como el aprendizaje significativo.</p>
+                            <ul>
+                                <li><strong>Enseña: </strong>Javascript - C++ - Python</li>
+                                <li><strong>Estudios y diploma: </strong>Ingeniera en sistemas computacionales</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!----CAJA 2-->
+                    <div class="docente-caja">
+                        <div class="caja-top">
+                            <div class="perfil">
+                                <div class="perfil-img">
+                                    <img src="Img/docente2.jpg" alt="docente">
+                                </div>
+                                <!----nombre y usuario-->
+                                <div class="nombre-user">
+                                    <strong>Celeste Gomez</strong>
+                                    <span>@gomzzzc</span>
+                                </div>
+                            </div>
+                                
+                        <!----RESEÑAS-->
+                        <div class="reseñas">
+                            <div class="estrellas">
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                            </div>
+                        </div>
+                        </div>
+                        <!----COMENTARIOS-->
+                        <div class="comentario">
+                            <p>Profesional de la carrera de diseño en videojuegos, egresada de la misma y empleada en rubro de diseño y creación de entornos y mundos 3D.
+                                logrando llevar actividades de investigación y auto alimentación de conocimientos generales y globales de los temas correspondientes .</p>
+                            <ul>
+                                <li><strong>Enseña: </strong>Unity - C++ - Diseño3D - Python</li>
+                                <li><strong>Estudios y diploma: </strong>Diseño en videojuegos</li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                    </div>
+              
+            </div>
+        </section>
+        <section class="cursos-relacionados">
+            <div class="contiene-cursos-rela">
+                <h2>Cusos relacionados</h2>
+              
+                <div class="card-list-cursos">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="Img/curso1.jpg" alt="JAVA">
+                        </div>
+                        <div class="text-curso">
+                            <h3>Java- curso inicial</h3>
+                            <a href= '2Detalle_curso_java.html' class="ver_curso">
+                                Ver detalle
+                             </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="Img/curso2.jpg" alt="CSS">
+                        </div>
+                        <div class="text-curso">
+                            <h3>CSS- curso inicial</h3>
+                            <a href= '3Detalle_curso_css.html' class="ver_curso">
+                                Ver detalle
+                             </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="Img/curso3.jpg" alt="HTML">
+                        </div>
+                        <div class="text-curso">
+                            <h3>HTML- curso inicial</h3>
+                            <a href= '4Detalle_curso_Html.html' class="ver_curso">
+                                Ver detalle
+                             </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="Img/curso4.jpg" alt="JAVASCRIPT">
+                        </div>
+                        <div class="text-curso">
+                            <h3>JAVASCRIPT- curso inicial</h3>
+                            <a href= '5Detalle_curso_JS.html' class="ver_curso">
+                               Ver detalle
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <h4>INTEGRANTES</h4>
+            <p>Gómez Celeste-45809908</p>
+            <p>Sleiman Yamila- 43316917</p>
+            <p>Viola Melina-44163024</p>
+        </div>
+     
+        <div class="box">
+            <h4>MENU</h4>
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contacto.html">Contactanos</a></li>
+                    <li><a href="Calendario.html">Calendario</a></li>
+                    <li><a href="Personalización.html">Gift Cards</a></li>
+                </ul>
+        </div>
+    
+        <div id="red-social">
+            <h4>SIGUENOS</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA" target="_blank">
+                    <img src="Img/Facebook-logo.png" alt="facebook" ><p>Facebook</p> 
+                </a></li>
+                <li><a href="https://www.instagram.com/unlamoficial/?hl=es" target="_blank">
+                    <img src="Img/Instagram-logo.png" alt="Instagram"><p>Instagram</p>
+                </a></li>
+                <li><a href="https://www.unlam.edu.ar/" target="_blank">
+                    <img src="Img/Unlam-logo.png" alt="UnlamOficial"><p>UNLaM Oficial</p>
+                </a></li>  
+            </ul> 
+        </div>
+    </div>
+    
+   <div class="grupo-2">
+       <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
+    </div>
+   
+</footer>
+<script src="JavaScript/js_detalleDeCurso.js"></script>
+<script src="JavaScript/indexJS.js"></script>
+<script src="JavaScript/cargarCarrito.js"></script>
+    <script src="JavaScript/carrito.js"></script>
+    <script src="JavaScript/modal.js"></script>
+</body>
+</html>

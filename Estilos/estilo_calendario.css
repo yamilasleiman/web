@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    min-height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+#fondo {
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+/*-----------------------------*/
+.contenerdor-calendario{
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    background-color: white; 
+    box-shadow: 0px 2px 20px rgb(0,0,0,0.2);
+}
+#calendario{
+    width: 100%;
+    margin-bottom: 5%;
+    max-width: 1200px;
+    border-radius: 15px;
+    /* display: block; */
+    background-color: rgba(255, 255, 255, 0.781); 
+    box-shadow: 0px 2px 20px rgb(0,0,0,0.2);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    transform: translate(25%,0);
+}
+.nombre-mes{
+    padding: 30px 0;
+    font-weight: 400;
+    color: #51565d;
+    text-align: center;
+}
+.dias{
+    height: 45px;
+    display: grid;
+    color: #51565d;
+    place-items: center;
+    border-top: 1px solid #a6a8b31f;
+    grid-template-columns: repeat(7,1fr);
+    border-bottom: 1px solid #a6a8b31f;
+}
+.calendario{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 120px;
+
+}
+.calendario-dia{
+    border-bottom: 1px solid #a6a8b31f;
+    border-top: 1px solid #a6a8b31f;
+    padding: 14px 20px;
+    color: #51565d;
+}
+.calendario-dia p{
+    padding: 5px;
+    color: white;
+    margin-top: 8px;
+    font-size: small;
+    border-radius: 10px;
+    background-color: #b271b180;
+}
+.fecha-actual strong{
+    color: rgb(70, 69, 69);
+}
+
+    /*PANTALLA CELULAR*/
+    @media screen and (max-width: 600px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            right: 0;
+        }
+        nav{
+            max-width: 100%;
+            right: 0;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        body nav ul li a {
+            font-size: 30px;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        #calendario{
+            transform: translate(0%,0%);
+        }
+        
+        .grupo-1{
+            display: flex;
+            flex-direction: column;
+        }
+      }
+  
+    /*PANTALLA TABLET*/
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+        body{
+            min-width: 601px;
+            max-width: 1024px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            right: 0;
+        }
+        nav{
+            max-width: 100%;
+            right: 0;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        body nav ul li a {
+            font-size: 30px;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        #calendario{
+            transform: translate(0%,0%);
+        }
+        footer{
+            right: 0;
+            justify-content: center;
+            right: 0;
+        }
+        .grupo-1{
+            display: flex;
+            flex-direction: column;
+            right: 0;
+    
+        }  
+      }
+  /*PANTALLA PC*/
+    @media screen and (min-width: 1025px) and (max-width:1500px){
+        header {
+            max-width: 100%;
+            right: 0;
+        }
+        nav{
+            max-width: 100%;
+            right: 0;
+        }
+        nav ul {
+            align-items: center;
+            max-width: 100%;
+            right: 0;
+        }
+        body nav ul li a {
+            font-size: 30px;
+            max-width: 100%;
+            right: 0;
+    
+        }
+        #calendario{
+            transform: translate(5%,0%);
+            
+        }
+        footer{
+            right: 0;
+            justify-content: center;
+      }
+    }
